@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 export const TableTask = () => {
 
     let url = import.meta.env.VITE_URL
-    let endPoint = "to_do_list_app"
+    let endPoint = "/to_do_list_app"
     let token = import.meta.env.VITE_TOKEN
     let newUrl = url + endPoint
 
@@ -36,7 +36,7 @@ export const TableTask = () => {
         <>
             <h1>Report</h1>
             <div className="table table-responsive">
-                <table class="table">
+                <table className="table">
                     <thead>
                         <tr>
                             <th>Id</th>
@@ -47,7 +47,7 @@ export const TableTask = () => {
                     <tbody>
                         {
                             data.map((item) => (
-                                <tr id={item.id}>
+                                <tr key={item.id}>
                                     <td> {item.id} </td>
                                     <td> {item.task} </td>
                                     <td> {item.completed} </td>
