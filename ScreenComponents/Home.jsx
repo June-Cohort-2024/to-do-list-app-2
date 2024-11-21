@@ -1,4 +1,4 @@
-import { TaskTable } from "../Components/TaskTable"
+import { TableTask } from "../Components/TableTask"
 
 export const Home = ()=> {
 
@@ -6,7 +6,7 @@ export const Home = ()=> {
     return (
         <>
             <h1>Home</h1>
-            <TaskTable />
+            <TableTask />
         </>
     )
 
