@@ -45,7 +45,7 @@ export const FormPostTask = () => {
                         <label className="form-label">Task</label>
                         <input onChange={changeHandler} type="text" className="form-control" />
                     </div>
-                    <button className="btn btn-success w-100" > Create </button>
+                    <button className="btn btn-primary w-100" > Create </button>
                 </form>
             </div>
 
